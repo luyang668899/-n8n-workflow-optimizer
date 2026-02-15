@@ -1,0 +1,30 @@
+{
+  "name": "@n8n/workflow-monitor",
+  "version": "0.1.0",
+  "description": "n8n workflow performance monitor plugin",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "n8n-workflow": "workspace:*",
+    "@n8n/errors": "workspace:*",
+    "@n8n/utils": "workspace:*",
+    "ws": "8.14.2",
+    "pidusage": "3.0.2",
+    "lodash-es": "4.17.21",
+    "eventemitter3": "5.0.1"
+  },
+  "devDependencies": {
+    "@types/ws": "8.5.10",
+    "@types/pidusage": "2.0.4",
+    "@types/lodash-es": "4.17.7",
+    "typescript": "*",
+    "vitest": "0.34.6"
+  }
+}

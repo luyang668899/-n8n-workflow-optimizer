@@ -1,0 +1,27 @@
+{
+  "name": "@n8n/workflow-optimizer",
+  "version": "0.1.0",
+  "description": "n8n workflow optimizer module",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "n8n-workflow": "workspace:*",
+    "@n8n/errors": "workspace:*",
+    "@n8n/utils": "workspace:*",
+    "lodash-es": "4.17.21",
+    "d3": "7.8.5"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "4.17.7",
+    "@types/d3": "7.4.3",
+    "typescript": "*",
+    "vitest": "0.34.6"
+  }
+}

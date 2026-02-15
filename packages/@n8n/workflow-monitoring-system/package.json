@@ -1,0 +1,47 @@
+{
+  "name": "@n8n/workflow-monitoring-system",
+  "version": "1.0.0",
+  "description": "监控系统集成插件，将工作流性能数据标准化并导出到主流监控系统，实现工作流性能的统一监控和告警",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./prometheus": {
+      "import": "./dist/prometheus/index.js",
+      "types": "./dist/prometheus/index.d.ts"
+    },
+    "./grafana": {
+      "import": "./dist/grafana/index.js",
+      "types": "./dist/grafana/index.d.ts"
+    },
+    "./elk": {
+      "import": "./dist/elk/index.js",
+      "types": "./dist/elk/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "lint": "eslint src/**/*.ts"
+  },
+  "dependencies": {
+    "n8n-workflow": "workspace:*",
+    "@n8n/errors": "workspace:*",
+    "@n8n/utils": "workspace:*",
+    "@n8n/workflow-monitor": "workspace:*",
+    "prom-client": "^15.1.0",
+    "winston": "^3.15.0",
+    "winston-elasticsearch": "^0.19.0",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.12",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
+  }
+}

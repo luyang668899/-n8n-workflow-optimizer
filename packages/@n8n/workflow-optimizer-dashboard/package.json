@@ -1,0 +1,44 @@
+{
+  "name": "@n8n/workflow-optimizer-dashboard",
+  "version": "1.0.0",
+  "description": "Interactive optimization dashboard for n8n workflow performance",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@n8n/workflow-monitor": "workspace:*",
+    "@n8n/workflow-ai-optimizer": "workspace:*",
+    "d3": "^7.9.0",
+    "echarts": "^5.5.1",
+    "react-chartjs-2": "^5.2.0",
+    "chart.js": "^4.4.0",
+    "socket.io-client": "^4.7.5",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.1",
+    "@mui/material": "^5.15.20",
+    "@mui/icons-material": "^5.15.20",
+    "@mui/x-data-grid": "^6.19.6",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/d3": "^7.4.3",
+    "@types/lodash-es": "^4.17.12",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^9.7.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "typescript": "~5.6.2",
+    "vite": "^5.3.1"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@n8n/workflow-execution-tracer",
+  "version": "1.0.0",
+  "description": "工作流执行轨迹可视化工具，展示工作流执行的完整过程，包括节点执行顺序、执行时间分布、数据流动路径和数据量变化",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "n8n-workflow": "workspace:*",
+    "@n8n/errors": "workspace:*",
+    "@n8n/utils": "workspace:*",
+    "d3": "^7.9.0",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.3",
+    "@types/lodash-es": "^4.17.12",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
+  }
+}

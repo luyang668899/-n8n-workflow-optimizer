@@ -1,0 +1,48 @@
+{
+  "name": "@n8n/workflow-resource-predictor",
+  "version": "1.0.0",
+  "description": "n8n workflow resource usage predictor",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "keywords": [
+    "n8n",
+    "workflow",
+    "resource",
+    "predictor",
+    "performance"
+  ],
+  "author": "n8n",
+  "license": "MIT",
+  "dependencies": {
+
+    "@tensorflow/tfjs-node": "^4.14.0",
+    "mathjs": "^12.4.0",
+    "lodash": "^4.17.21",
+    "n8n-workflow": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/lodash": "^4.14.202",
+    "typescript": "^5.4.3",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "ts-jest": "^29.1.2",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "prettier": "^3.2.5"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

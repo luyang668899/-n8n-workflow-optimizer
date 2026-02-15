@@ -1,0 +1,27 @@
+{
+  "name": "@n8n/workflow-ai-optimizer",
+  "version": "1.0.0",
+  "description": "AI-powered workflow optimization suggestion system for n8n",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest watch"
+  },
+  "dependencies": {
+    "n8n-workflow": "workspace:*",
+    "@n8n/errors": "workspace:*",
+    "@n8n/utils": "workspace:*",
+    "lodash-es": "^4.17.21",
+    "openai": "^4.58.0",
+    "axios": "^1.7.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "~5.6.2",
+    "vitest": "^2.0.5",
+    "@types/lodash-es": "^4.17.12"
+  }
+}
